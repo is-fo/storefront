@@ -1,0 +1,49 @@
+body {
+    font-family: 'Afacad', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+headers {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+.logo {
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+
+header form {
+    padding: 8px;
+}
+
+.search-cart {
+    display: flex;
+    align-items: right;
+}
+
+input {
+    font-family: inherit;
+    font-size: 18px;
+    width: 300px;
+    padding: 6px;
+    outline: none;
+    border: 1px solid gray;
+    background: url(../images/search-interface-symbol.png) no-repeat right 10px center;
+    background-size: 20px;
+}
+
