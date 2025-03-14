@@ -62,8 +62,19 @@ input {
     input {
         width: 200px;
     }
-    .product-image {
-        display: none;
+    .p-image1 {
+        width: 250px;
+    }
+}
+
+.p-image2 {
+    padding-left: 8px;
+    display: none;
+}
+
+@media (min-width: 1245px) {
+    .p-image2 {
+        display: flex;
     }
 }
 
@@ -72,6 +83,7 @@ input {
     align-items: center;
     padding: 6px;
     background-color: orange;
+    padding-right: 8%;
 }
 
 .product-info {
@@ -80,10 +92,8 @@ input {
 }
 
 .product-image {
-    padding-right: 8%;
     display: flex;
     align-items: right;
-    width: 50%;
     width: auto;
     height: auto;
     flex-shrink: 1;
