@@ -17,7 +17,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 6px;
     border: 1px solid black;
     border-left: none;
     border-right: none;
@@ -63,5 +62,31 @@ input {
     input {
         width: 200px;
     }
+    .product-image {
+        display: none;
+    }
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: orange;
+}
+
+.product-info {
+    padding-left: 40px;
+    padding-right: 16px;
+}
+
+.product-image {
+    padding-right: 8%;
+    display: flex;
+    align-items: right;
+    width: 50%;
+    width: auto;
+    height: auto;
+    flex-shrink: 1;
+    justify-content: center;
 }
 
