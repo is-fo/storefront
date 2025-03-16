@@ -72,14 +72,23 @@ input {
     display: none;
 }
 
+.banner-spacer {
+    display: none;
+}
+
 @media (min-width: 1245px) {
     .p-image2 {
         display: flex;
+    }
+    .banner-spacer {
+        display: flex;
+        width: 20%;
     }
 }
 
 .banner {
     display: flex;
+    width: 100%;
     align-items: center;
     padding: 6px;
     background-color: orange;
@@ -87,6 +96,7 @@ input {
 }
 
 .product-info {
+    flex-grow: 1;
     padding-left: 40px;
     padding-right: 16px;
 }
@@ -99,4 +109,3 @@ input {
     flex-shrink: 1;
     justify-content: center;
 }
-
