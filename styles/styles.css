@@ -96,8 +96,7 @@ input {
 .banner {
     display: flex;
     align-items: center;
-    padding: 6px 6px 0px 6px;
-    padding-right: 8%;
+    padding: 6px 6px 0px 6px;   
     background-color: orange;
 }
 
@@ -147,4 +146,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 6px;
+    background-color: orange;
 }
