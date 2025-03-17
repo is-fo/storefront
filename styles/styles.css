@@ -127,13 +127,18 @@ main {
     }
     .category {
         div{
-            
+            display: flex;
+            align-items: center; /* */
+              
         }
     }
     .p-image {
         mix-blend-mode: multiply;
-        padding: 30px;
-        
-        
+        padding: 35px;
+        filter: contrast(1.12);
     }
+    .p-image:hover {
+        filter: contrast(1);
+      }
+    
 }
