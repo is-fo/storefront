@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Storefront Demo</title>
+    <script src="script/script.js"></script>
     <link rel="icon" href="images/monogram-16px.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +18,13 @@
             <div class="logo">
                 <div class="spacer"></div>
                 <img src="images/ekstedt-trimmed-logo.png" alt="Storefront Logo" width="200">
+                <div class="spacer"></div>
             </div>
             <div class="search-cart">
                 <form action="get">
                     <input type="text" placeholder="Sök">
                 </form>
-                <img src="images/cart.png" alt="Cart" width="48">
+                <img src="images/cart.png" alt="Cart" width="46">
                 <div class="spacer"></div>
 
             </div>
@@ -44,8 +46,25 @@
         <div class = "banner-spacer"></div>
     </div>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente fugit eligendi reprehenderit nesciunt qui aperiam voluptatum voluptatibus atque blanditiis mollitia eveniet ipsa culpa corrupti dolor, itaque impedit perferendis delectus dolores.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit atque non eveniet voluptate adipisci quisquam saepe molestias quaerat consectetur libero veritatis, ex incidunt dolorem quas quo maiores corrupti porro.</p>
+        <div class="category">
+            <h2>Man</h2>
+            <div id="man-produkter"></div>
+        </div>
+        
+        <div class="category">
+            <h2>Kvinna</h2>
+            <div id="kvinnor-produkter"></div>
+        </div>
+        
+        <div class="category">
+            <h2>Smycken</h2>
+            <div id="smycken-produkter"></div>
+        </div>
+        
+        <div class="category">
+            <h2>Elektronik</h2>
+            <div id="elektronik-produkter"></div>
+        </div>
         
     </main>
     <footer>

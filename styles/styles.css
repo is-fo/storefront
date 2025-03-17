@@ -1,14 +1,16 @@
-
-
 body {
     font-family: 'Afacad', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
-    width: 100%;
     flex-direction: column;
     color: black;
 }
@@ -36,17 +38,19 @@ header {
 
 header form {
     padding: 8px;
+    flex-grow: 1;   
 }
 
 .search-cart {
     display: flex;
     align-items: right;
+    flex-grow: 1;
 }
 
 input {
     font-family: inherit;
     font-size: 18px;
-    width: 400px;
+    width: 100%;
     padding: 6px;
     outline: none;
     border: 1px solid gray;
@@ -58,9 +62,6 @@ input {
 @media (max-width: 768px) {
     .spacer {
         display: none;
-    }
-    input {
-        width: 200px;
     }
     .p-image1 {
         width: 250px;
@@ -88,11 +89,10 @@ input {
 
 .banner {
     display: flex;
-    width: 100%;
     align-items: center;
-    padding: 6px;
-    background-color: orange;
+    padding: 6px 6px 0px 6px;
     padding-right: 8%;
+    background-color: orange;
 }
 
 .product-info {
@@ -108,4 +108,20 @@ input {
     height: auto;
     flex-shrink: 1;
     justify-content: center;
+}
+
+main {
+    border-bottom: 1px solid black;
+    h2 {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 6px;
+        background-color: rgb(253, 117, 87);
+
+    }
+    div {
+    }
+    .p-image {
+        mix-blend-mode: multiply;
+    }
 }
