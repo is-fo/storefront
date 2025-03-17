@@ -22,6 +22,12 @@ header {
     border: 1px solid black;
     border-left: none;
     border-right: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
 }
 
 .spacer {
@@ -120,11 +126,14 @@ main {
 
     }
     .category {
-        div {
-
+        div{
+            
         }
     }
     .p-image {
         mix-blend-mode: multiply;
+        padding: 30px;
+        
+        
     }
 }
