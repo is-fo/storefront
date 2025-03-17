@@ -119,7 +119,10 @@ main {
         background-color: rgb(253, 117, 87);
 
     }
-    div {
+    .category {
+        div {
+
+        }
     }
     .p-image {
         mix-blend-mode: multiply;
