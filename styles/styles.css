@@ -128,7 +128,7 @@ main {
         div{
             display: flex;
             align-items: center; /* */
-              
+            min-height: 260px;
         }
     }
     .p-image {
