@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (container) {
                         const productCard = document.createElement("div");
                         productCard.classList.add("product-card");
+                        productCard.onclick = () => gotoForm(product);
 
                         const img = document.createElement("img");
                         img.src = product.image;
@@ -39,3 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error fetching products:", error));
 });
+
+function gotoForm(product) {
+    localStorage.setItem("selectedProduct", JSON.stringify(product));
+    window.location.href = "form.html";
+}
