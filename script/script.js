@@ -16,15 +16,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (containerId) {
                     const container = document.getElementById(containerId);
                     if (container) {
+                        const productCard = document.createElement("div");
+                        productCard.classList.add("product-card");
+                        productCard.onclick = () => gotoForm(product);
+
                         const img = document.createElement("img");
                         img.src = product.image;
                         img.alt = product.title;
-                        img.classList.add("p-image");
-                        img.style.width = "200px";
-                        container.appendChild(img);
+                        productCard.appendChild(img);
+
+                        const title = document.createElement("h3");
+                        title.textContent = product.title;
+                        productCard.appendChild(title)
+
+                        const price = document.createElement("p");
+                        price.textContent = `$${product.price}`;
+                        productCard.appendChild(price);
+
+                        container.appendChild(productCard);
                     }
                 }
             });
         })
         .catch(error => console.error("Error fetching products:", error));
 });
+
+function gotoForm(product) {
+    localStorage.setItem("selectedProduct", JSON.stringify(product));
+    window.location.href = "form.html";
+}
