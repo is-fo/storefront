@@ -16,12 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (containerId) {
                     const container = document.getElementById(containerId);
                     if (container) {
+                        const productCard = document.createElement("div");
+                        productCard.classList.add("product-card");
+
                         const img = document.createElement("img");
                         img.src = product.image;
                         img.alt = product.title;
-                        img.classList.add("p-image");
-                        img.style.width = "200px";
-                        container.appendChild(img);
+                        productCard.appendChild(img);
+
+                        const title = document.createElement("h3");
+                        title.textContent = product.title;
+                        productCard.appendChild(title)
+
+                        const price = document.createElement("p");
+                        price.textContent = `$${product.price}`;
+                        productCard.appendChild(price);
+
+                        container.appendChild(productCard);
                     }
                 }
             });
