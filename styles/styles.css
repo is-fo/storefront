@@ -65,6 +65,7 @@ input {
     box-sizing: border-box;
 }
 
+
 @media (max-width: 768px) {
     .spacer {
         display: none;
@@ -129,7 +130,6 @@ main {
         div{
             display: flex;
             align-items: center; /* */
-            min-height: 260px;
         }
     }
 
@@ -213,4 +213,21 @@ footer .footer-section ul li a {
     color: black; 
     text-decoration: none; 
     font-size: 14px;
+}
+
+form {
+    display: block; /* Se till att alla fält hamnar på en rad */
+    width: 100%; /* Sätt en maxbredd så att allt håller sig inom gränserna */
+}
+
+input.form-control {
+    width: 100%; /* Se till att fälten tar upp hela bredden i formuläret */
+    box-sizing: border-box; /* Förhindrar att padding gör att bredden ökar */
+}
+
+.form-label{
+    width: 100px;
+}
+.category button{
+    
 }
