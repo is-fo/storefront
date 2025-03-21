@@ -64,36 +64,50 @@
                 <div class="container mt-3">
                     <form>
                         <div class="mb-3">
-                            <label for="form-firstname" class="form-label">Förnamn</label>
-                            <input type="name" class="form-control" id="form-firstname" placeholder="Ange ditt förnamn">
+                            <label for="form-firstname" class="form-label mx-5">Förnamn</label>
+                            <input type="name" class="form-control" id="form-firstname" placeholder="Ange ditt förnamn" required; minlength="2" maxlength="50">
                         </div>
+                        
                         <div class="mb-3">
-                            <label for="form-lastname" class="form-label">Efternamn</label>
-                            <input type="text" class="form-control" id="form-lastname" placeholder="Ange ditt efternamn">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-post</label>
-                            <input type="email" class="form-control" id="form-email" placeholder="Ange din e-post">
-                        </div>
-                        <div class="mb-3">
-                            <label for="form-email" class="form-label">E-post</label>
-                            <input type="email" class="form-control" id="form-email" placeholder="Ange din e-post">
+                            <label for="form-lastname" class="form-label mx-5">Efternamn</label>
+                            <input type="text" class="form-control" id="form-lastname" placeholder="Ange ditt efternamn" required; minlength="2" maxlength="50">
                         </div>
 
+                        <div class="mb-3">
+                            <label for="email" class="form-label mx-5">E-post</label>
+                            <input type="email" class="form-control" id="form-email" placeholder="Ange din e-post" required; minlength="2" maxlength="50">
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="form-phone" class="form-label mx-5">Telefonnummer</label>
+                            <input type="tel" class="form-control" id="form-phone" placeholder="Ange telefonnummer (070-1234567)" pattern="[0-9]{3}-[0-9]{7}">
+                        </div>
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Telefonnummer</label>
-                            <input type="email" class="form-control" id="form-email" placeholder="Ange din e-post">
+                            <label for="form-street" class="form-label mx-5">Gatuadress</label>
+                            <input type="text" class="form-control" id="form-street" placeholder="Ange gatuadress" required; minlength="2" maxlength="50">
                         </div>
+
+                        <div class="mb-3">
+                            <label for="form-zipcode" class="form-label mx-5">Postnummer</label>
+                            <input type="text" class="form-control" id="form-zipcode" placeholder="Ange ditt postnummer (fem siffror)" required; pattern="[0-9]{5}">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="form-city" class="form-label mx-5">Ort</label>
+                            <input type="text" class="form-control" id="form-lastname" placeholder="Ange ort" required; minlength="2" maxlength="50">
+                        </div>
+
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary mb-3">Beställ</button>
                         </div>
+                        
                     </form>
                 </div>
                 
 
             </div>
         </div>
-    
+        
 </body>
 </html>
