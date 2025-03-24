@@ -22,12 +22,12 @@ header {
     border: 1px solid black;
     border-left: none;
     border-right: none;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
     background-color: white;
+    position: fixed;
+    z-index: 1000;
 }
 
 .spacer {
@@ -40,6 +40,9 @@ header {
     display: flex;
     align-items: center;
     mix-blend-mode: multiply;
+    img {
+        cursor: pointer;
+    }
 }
 
 header form {
@@ -54,6 +57,16 @@ header form {
 }
 
 input {
+    font-family: inherit;
+    font-size: 18px;
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.input-search {
     font-family: inherit;
     font-size: 18px;
     width: 100%;

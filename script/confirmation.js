@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     
-    const product = JSON.parse(localStorage.getItem("orderProduct"));
-    const userInfo = JSON.parse(localStorage.getItem("orderInfo"));
+    const product = JSON.parse(sessionStorage.getItem("orderProduct"));
+    const userInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
 
     if (product) {
         document.getElementById("product-image").src = product.image;

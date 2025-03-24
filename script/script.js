@@ -42,6 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function gotoForm(product) {
-    localStorage.setItem("selectedProduct", JSON.stringify(product));
+    sessionStorage.setItem("selectedProduct", JSON.stringify(product));
     window.location.href = "form.html";
 }

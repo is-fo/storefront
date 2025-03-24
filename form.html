@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Storefront Demo</title>
     <script src="script/form.js"></script>
     <link rel="icon" href="images/monogram-16px.png" type="image/x-icon">
@@ -23,14 +20,7 @@
         <div class="outer">
             <div class="logo">
                 <div class="spacer"></div>
-                <img src="images/ekstedt-trimmed-logo.png" alt="Storefront Logo" width="200">
-                <div class="spacer"></div>
-            </div>
-            <div class="search-cart">
-                <form action="get">
-                    <input type="text" class="nav-search" placeholder="Sök">
-                </form>
-                <a href="index.html"><img src="images/cart.png" alt="Cart" width="46"></a>
+                <img src="images/ekstedt-trimmed-logo.png" onclick="window.location.href='index.html'" alt="Storefront Logo" width="200">
                 <div class="spacer"></div>
             </div>
         </div>
@@ -54,9 +44,6 @@
         </div>
       <div class="banner-spacer"></div>
     </div>
-
-
-
     <main>
         <div class="category">
             <h2>Checkout</h2>
@@ -85,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6" id="order-form">
                             <form>
                                 <div class="form-group mb-4">
                                     <label for="form-firstname" class="form-label text-start">Förnamn</label>

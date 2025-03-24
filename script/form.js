@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (isValid) {
-                localStorage.setItem("orderInfo", JSON.stringify(userInfo));
+                sessionStorage.setItem("orderInfo", JSON.stringify(userInfo));
 
-                const product = JSON.parse(localStorage.getItem("selectedProduct"));
-                localStorage.setItem("orderProduct", JSON.stringify(product));
+                const product = JSON.parse(sessionStorage.getItem("selectedProduct"));
+                sessionStorage.setItem("orderProduct", JSON.stringify(product));
 
                 window.location.href = "confirmation.html";
             } else {
