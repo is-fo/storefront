@@ -27,11 +27,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         const title = document.createElement("h3");
                         title.textContent = product.title;
-                        productCard.appendChild(title)
+                        productCard.appendChild(title);
 
                         const price = document.createElement("p");
                         price.textContent = `$${product.price}`;
                         productCard.appendChild(price);
+
+                        const infoButton = document.createElement("div");
+                        infoButton.classList.add("info-button");
+                        infoButton.innerHTML = '<i class="fas fa-info"></i>';
+                        
+                        infoButton.addEventListener('click', (e) => e.stopPropagation());
+                        infoButton.addEventListener('mouseenter', (e) => e.stopPropagation());
+                        productCard.appendChild(infoButton);
+
+                        const overlay = document.createElement("div");
+                        overlay.classList.add("product-overlay");
+                        overlay.innerHTML = `
+                            <div class="overlay-content">
+                                <div class="product-info-text">
+                                    <p><strong>Category:</strong> ${formatCategory(product.category)}</p>
+                                    <p>${product.description}</p>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="rating-stars">
+                                        ${generateStars(product.rating.rate)}
+                                    </div>
+                                    <div class="rating-count">
+                                        (${product.rating.count} reviews)
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        productCard.appendChild(overlay);
 
                         container.appendChild(productCard);
                     }
@@ -39,6 +67,21 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error("Error fetching products:", error));
+
+    function formatCategory(category) {
+        return category.replace(/'/g, '')
+                      .replace("mens", "men's")
+                      .replace("womens", "women's")
+                      .split(' ')
+                      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                      .join(' ');
+    }
+
+    function generateStars(rating) {
+        const fullStars = '★'.repeat(Math.round(rating));
+        const emptyStars = '☆'.repeat(5 - Math.round(rating));
+        return fullStars + emptyStars;
+    }
 });
 
 function gotoForm(product) {
