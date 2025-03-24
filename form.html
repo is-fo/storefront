@@ -62,47 +62,65 @@
             <h2>Checkout</h2>
             <div id="checkout">
                 <div class="container mt-3">
-                    <form>
-                        <div class="mb-3">
-                            <label for="form-firstname" class="form-label mx-5">Förnamn</label>
-                            <input type="name" class="form-control" id="form-firstname" placeholder="Ange ditt förnamn" required; minlength="2" maxlength="50">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="row">
+                                 <div class="col-12">
+                                    <h5 class="mt-2">Produktnamn</h5>
+                                 </div>
+                                <div class="col-12">
+                                    <img src="https://picsum.photos/200/200" alt="Produktbild" class="img-fluid">
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <p><strong>Pris:</strong> 299 SEK</p>
+                                        <p><strong>Antal:</strong> <span id="total">1</span></p>
+                                        <p><strong>Summa:</strong> <span id="total">299 SEK</span></p>
+                                        <div class="d-flex align-items-center">
+                                            
+                                            <!-- <input type="number" id="quantity" class="form-control mx-2" value="1" min="0" style="width: 60px; text-align: center;"> -->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="mb-3">
-                            <label for="form-lastname" class="form-label mx-5">Efternamn</label>
-                            <input type="text" class="form-control" id="form-lastname" placeholder="Ange ditt efternamn" required; minlength="2" maxlength="50">
+                        <div class="col-12 col-md-6">
+                            <form>
+                                <div class="form-group mb-4">
+                                    <label for="form-firstname" class="form-label text-start">Förnamn</label>
+                                    <input type="text" class="form-control" id="form-firstname" placeholder="Ange ditt förnamn" required minlength="2" maxlength="50">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="form-lastname" class="form-label text-start">Efternamn</label>
+                                    <input type="text" class="form-control" id="form-lastname" placeholder="Ange ditt efternamn" required minlength="2" maxlength="50">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="form-email" class="form-label text-start">E-post</label>
+                                    <input type="email" class="form-control" id="form-email" placeholder="Ange din e-post" required minlength="2" maxlength="50">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="form-phone" class="form-label text-start">Telefonnummer</label>
+                                    <input type="tel" class="form-control" id="form-phone" placeholder="Ange telefonnummer (070-1234567)" pattern="[0-9]{3}-[0-9]{7}">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="form-street" class="form-label text-start">Gatuadress</label>
+                                    <input type="text" class="form-control" id="form-street" placeholder="Ange gatuadress" required minlength="2" maxlength="50">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="form-zipcode" class="form-label text-start">Postnummer</label>
+                                    <input type="text" class="form-control" id="form-zipcode" placeholder="Ange ditt postnummer (fem siffror)" required pattern="[0-9]{5}">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="form-city" class="form-label text-start">Ort</label>
+                                    <input type="text" class="form-control" id="form-city" placeholder="Ange ort" required minlength="2" maxlength="50">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary mb-3">Beställ</button>
+                                </div>
+                            </form>
                         </div>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label mx-5">E-post</label>
-                            <input type="email" class="form-control" id="form-email" placeholder="Ange din e-post" required; minlength="2" maxlength="50">
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="form-phone" class="form-label mx-5">Telefonnummer</label>
-                            <input type="tel" class="form-control" id="form-phone" placeholder="Ange telefonnummer (070-1234567)" pattern="[0-9]{3}-[0-9]{7}">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="form-street" class="form-label mx-5">Gatuadress</label>
-                            <input type="text" class="form-control" id="form-street" placeholder="Ange gatuadress" required; minlength="2" maxlength="50">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="form-zipcode" class="form-label mx-5">Postnummer</label>
-                            <input type="text" class="form-control" id="form-zipcode" placeholder="Ange ditt postnummer (fem siffror)" required; pattern="[0-9]{5}">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="form-city" class="form-label mx-5">Ort</label>
-                            <input type="text" class="form-control" id="form-lastname" placeholder="Ange ort" required; minlength="2" maxlength="50">
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary mb-3">Beställ</button>
-                        </div>
-                        
-                    </form>
+                    </div>
                 </div>
                 
 
