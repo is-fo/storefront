@@ -131,7 +131,8 @@ input {
 
 main {
     border-bottom: 1px solid black;
-    h2 {
+}
+     h2 {
         border-bottom: 1px solid black;
         border-top: 1px solid black;
         padding: 6px;
@@ -142,7 +143,7 @@ main {
     .category {
         div{
             display: flex;
-            align-items: center; /* */
+            align-items: center; 
         }
     }
 
@@ -199,7 +200,126 @@ main {
         justify-content: flex-start;
         padding: 10px;
       }
+
+      /* köp-btn */
+.product-price {
+    margin: 0; 
+    font-size: 16px;
+    color: orange; 
 }
+
+.buy-button {
+    background-color: rgb(255, 165, 0); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: background-color 0.3s; 
+}
+
+.buy-button:hover {
+    background-color: rgb(114, 76, 5); 
+}
+        /* köp-btn */
+        /* kvitto */
+      .confirmation-main {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        min-height: calc(100vh - 100px); 
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+    
+    .confirmation-container {
+        max-width: 600px; 
+        width: 100%; 
+        text-align: center;
+        background-color: #e9f7fe; 
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .confirmation-logo {
+        max-width: 150px;
+        margin: 0 auto 10px;
+        display: block;
+    }
+    
+    .confirmation-title {
+        color: orange;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    
+    .notification {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%; 
+        text-align: center; 
+    }
+    
+    .order-info {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%; 
+        text-align: center; 
+    }
+    
+    .confirmation-info {
+        padding: 6px;
+        font-size: 20px;
+        color: orange;
+        background-color: transparent; 
+        border: none !important; 
+    }
+    
+    .product-display {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+        margin: 10px 0;
+        gap: 20px;
+        width: 100%; 
+    }
+    
+    .product-image {
+        width: 150px;
+        height: auto;
+        margin-left: 20px; 
+    }
+    
+    .product-details {
+        text-align: left;
+    }
+    
+    .product-details h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .product-details p {
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .shipping-info {
+        margin-top: 10px;
+        text-align: left;
+        display: inline-block;
+        width: 100%; 
+    }
+    
+    .shipping-info h3 {
+        font-size: 18px;
+    }
+        /* kvitto */
 
 footer {
     display: flex;
@@ -252,6 +372,4 @@ input.form-control {
     display: flex;
     flex-direction: column;
 }
-.category button{
-    
-}
+

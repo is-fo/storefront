@@ -54,21 +54,44 @@
         </div>
       <div class="banner-spacer"></div>
     </div>
-    <main>
-        <h1>Tack för din beställning!</h1>
-        <h2>Orderbekräftelse</h2>
-        <div id="order-summary">
-            <img id="product-image" src="" alt="Produktbild">
-            <h3 id="product-title"></h3>
-            <p id="product-price"></p>
+    <main class="confirmation-main">
+        <div class="confirmation-container">
+            <img src="images/ekstedt-trimmed-logo.png" alt="Logotyp" class="confirmation-logo">
+            <h1 class="confirmation-title">Hej <span id="customer-name"></span>!</h1>
+            <p>Tack för att du handlar hos oss. Vi hoppas du blir nöjd med ditt köp.</p>
+            <p>Din order har mottagits och behandlas.</p>
+    
+            <div class="notification">
+                <p><strong>Bekräftelse skickad till:</strong> <span id="customer-email"></span></p>
+                <p><strong>SMS skickas till:</strong> <span id="customer-phone"></span> när varan skickas</p>
+            </div>
+    
+            <div class="order-info">
+                <h2 class="confirmation-info">Orderinformation</h2>
+                <p><strong>Ordernummer:</strong> <span id="order-number"></span></p>
+                <p><strong>Orderdatum:</strong> <span id="order-date"></span></p>
+            </div>
+    
+            <div class="product-display">
+                <img id="product-image" src="" alt="Produktbild" class="product-image">
+                <div class="product-details">
+                    <h3 id="product-title"></h3>
+                    <p id="product-price"></p>
+                </div>
+            </div>
+    
+            <div class="order-info">
+                <h3>Ordersammanfattning</h3>
+                <p><strong>Totalt:</strong> <span id="order-total"></span></p>
+            </div>
+    
+            <div class="shipping-info">
+                <h3>Leveransinformation</h3>
+                <div id="customer-address"></div>
+                <p><strong>Beräknat leveransdatum:</strong> <span id="delivery-date"></span></p>
+            </div>
         </div>
-
-        <h2>Dina uppgifter</h2>
-        <p><strong>Namn:</strong> <span id="customer-name"></span></p>
-        <p><strong>E-post:</strong> <span id="customer-email"></span></p>
-        <p><strong>Telefon:</strong> <span id="customer-phone"></span></p>
-        <p><strong>Adress:</strong> <span id="customer-address"></span></p>
-    </main>
+    </main> 
     <footer>
         <div class="footer-section">
             <h3><i class="fa-solid fa-heart"></i>Credits</h3>
