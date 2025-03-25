@@ -314,6 +314,7 @@ main {
         text-align: left;
         display: inline-block;
         width: 100%; 
+        text-align: center;
     }
     
     .shipping-info h3 {
