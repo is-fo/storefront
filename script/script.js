@@ -29,13 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         title.textContent = product.title;
                         productCard.appendChild(title)
 
-                        const priceContainer = document.createElement("div");
-                        priceContainer.classList.add("price-container");
-
                         const price = document.createElement("p");
                         price.textContent = `$${product.price}`;
                         price.classList.add("product-price");
-                        priceContainer.appendChild(price);
+                        productCard.appendChild(price);
 
                         const buyButton = document.createElement("button");
                         buyButton.textContent = "Buy now";
@@ -44,10 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             e.stopPropagation(); 
                             gotoForm(product);
                         };
-                        priceContainer.appendChild(buyButton);
 
-                        productCard.appendChild(priceContainer);
-
+                        productCard.appendChild(buyButton);
                         container.appendChild(productCard);
                     }
                 }
