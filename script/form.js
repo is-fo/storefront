@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const product = JSON.parse(sessionStorage.getItem("selectedProduct"));
 
     if (product) {
-        document.getElementById("product-price").innerHTML = `${product.priceSEK} SEK`;
+        document.getElementById("product-price").innerHTML = `${product.priceSEK} kr`;
         document.getElementById('product-image').src = product.image;
         document.getElementById('product-title').innerHTML = product.title;
-        document.getElementById('order-total').innerHTML = `${product.priceSEK} SEK`;
+        document.getElementById('order-total').innerHTML = `${product.priceSEK} kr`;
     }
 
     if (form) {

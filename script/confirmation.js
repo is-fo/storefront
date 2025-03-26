@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
     if (product) {
         document.getElementById('product-image').src = product.image;
         document.getElementById('product-title').textContent = product.title;
-        document.getElementById("product-price").textContent = `${product.priceSEK} SEK`;
-        document.getElementById('order-total').textContent = `${product.priceSEK} SEK`;
+        document.getElementById("product-price").textContent = `${product.priceSEK} kr`;
+        document.getElementById('order-total').textContent = `${product.priceSEK} kr`;
     }
     
     
