@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (container) {
                         const productCard = document.createElement("div");
                         productCard.classList.add("product-card");
-                        productCard.onclick = () => gotoForm(product);
+                        //productCard.onclick = () => gotoForm(product);
 
                         const img = document.createElement("img");
                         img.src = product.image;
