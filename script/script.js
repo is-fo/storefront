@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         priceContainer.appendChild(price);
 
                         const buyButton = document.createElement("button");
-                        buyButton.textContent = "Köp";
+                        buyButton.textContent = "Buy now";
                         buyButton.classList.add("buy-button");
                         buyButton.onclick = (e) => {
                             e.stopPropagation(); 
