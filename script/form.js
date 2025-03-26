@@ -2,6 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("order-form");
     const submitBtn = document.getElementById("submit-btn");
 
+    const product = JSON.parse(sessionStorage.getItem("selectedProduct"));
+
+    if (product) {
+        document.getElementById("product-price").innerHTML = `$${product.price} `;
+        document.getElementById('product-image').src = product.image;
+        document.getElementById('product-title').innerHTML = product.title;
+        document.getElementById('order-total').innerHTML = `$${product.price}`;
+    }
+
     if (form) {
         form.addEventListener("submit", function (event) {
             event.preventDefault(); 

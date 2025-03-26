@@ -309,8 +309,8 @@ border-bottom: 1px solid black;
 }
 
 .product-image {
-    max-width: 50%;
-    max-height: 30%;
+    max-width: 40%;
+    max-height: 25%;
     aspect-ratio: 1/1;
     object-fit: contain;
     mix-blend-mode: multiply;
@@ -379,5 +379,9 @@ input.form-control {
 .form-group {
     display: flex;
     flex-direction: column;
+}
+.product-image-form{
+    max-width: 200px;   /* Maximal bredd på 300px */
+    max-height: 200px;  /* Maximal höjd på 300px */
 }
 

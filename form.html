@@ -53,18 +53,22 @@
                         <div class="col-12 col-md-6 mb-4">
                             <div class="row">
                                  <div class="col-12">
-                                    <h5 class="mt-2">Produktnamn</h5>
+                                    <h5 id="product-title" class="mt-2">Produktnamn</h5>
                                  </div>
                                 <div class="col-12">
-                                    <img src="https://picsum.photos/200/200" alt="Produktbild" class="img-fluid">
+                                    <img id="product-image" src="" alt="Produktbild" class="product-image">
                                 </div>
                                 <div class="col-8">
                                     <div class="d-flex flex-column align-items-start">
-                                        <p><strong>Pris:</strong> 299 SEK</p>
-                                        <p><strong>Antal:</strong> <span id="total">1</span></p>
-                                        <p><strong>Summa:</strong> <span id="total">299 SEK</span></p>
+                                        <p><strong>Pris:</strong> <span id="product-price"></span></p>
+                                        <p><strong>Antal:</strong> <span id="product-amount">1</span></p>
+                                        <p><strong>Summa:</strong> <span id="order-total">299 SEK</span></p>
                                         <div class="d-flex align-items-center">
-                                            
+                                            <!--document.getElementById('product-image').src = product.image;
+                                                document.getElementById('product-title').textContent = product.title;
+                                                document.getElementById("product-price").textContent = `$${product.price}`;
+                                                document.getElementById('order-total').textContent = `Totalt: $${product.price}`;-->
+
                                             <!-- <input type="number" id="quantity" class="form-control mx-2" value="1" min="0" style="width: 60px; text-align: center;"> -->
                                             
                                         </div>
