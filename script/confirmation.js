@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('product-image').src = product.image;
         document.getElementById('product-title').textContent = product.title;
         document.getElementById("product-price").textContent = `$${product.price}`;
-        document.getElementById('order-total').textContent = `Totalt: $${product.price}`;
+        document.getElementById('order-total').textContent = `$${product.price}`;
     }
     
     
