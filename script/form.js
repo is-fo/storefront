@@ -2,14 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("order-form");
 
     const submitBtn = document.getElementById("submit-btn");
-
     const product = JSON.parse(sessionStorage.getItem("selectedProduct"));
 
     if (product) {
-        document.getElementById("product-price").innerHTML = `$${product.price} `;
+        document.getElementById("product-price").innerHTML = `${product.priceSEK} SEK`;
         document.getElementById('product-image').src = product.image;
         document.getElementById('product-title').innerHTML = product.title;
-        document.getElementById('order-total').innerHTML = `$${product.price}`;
+        document.getElementById('order-total').innerHTML = `${product.priceSEK} SEK`;
     }
 
     if (form) {

@@ -1,10 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
     const categories = {
         "men's clothing": "man-produkter",
         "women's clothing": "kvinnor-produkter",
         "jewelery": "smycken-produkter",
         "electronics": "elektronik-produkter"
     };
+
+    const rateResponse = await fetch("https://api.frankfurter.app/latest?from=USD&to=SEK");
+    const rateData = await rateResponse.json();
+    const exchangeRate = rateData.rates.SEK;
 
     fetch("https://fakestoreapi.com/products")
         .then(response => response.json())
@@ -30,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         productCard.appendChild(title)
 
                         const price = document.createElement("p");
-                        price.textContent = `$${product.price}`;
+                        const priceInSEK = (product.price * exchangeRate).toFixed(2);
+                        price.textContent = `${priceInSEK} SEK`;
                         price.classList.add("product-price");
                         productCard.appendChild(price);
 
@@ -39,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         buyButton.classList.add("buy-button");
                         buyButton.onclick = (e) => {
                             e.stopPropagation(); 
+                            product.priceSEK = priceInSEK;
                             gotoForm(product);
                         };
 
