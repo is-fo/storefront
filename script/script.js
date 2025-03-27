@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         productCard.appendChild(title)
 
                         const price = document.createElement("p");
-                        const priceInSEK = (product.price * exchangeRate).toFixed(2);
+                        const priceInSEK = (product.price * exchangeRate).toFixed(0);
                         price.textContent = `${priceInSEK} kr`;
                         price.classList.add("product-price");
                         productCard.appendChild(price);
