@@ -2,7 +2,7 @@ body {
     font-family: 'Afacad', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffcf70;
+    background-color: #e2e2e2;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -87,7 +87,8 @@ input {
         display: none;
     }
     .p-image1 {
-        width: 250px;
+        width: 350px;
+        margin-left: 10px;
     }
 }
 
@@ -100,13 +101,17 @@ input {
     display: none;
 }
 
+
+
 @media (min-width: 1245px) {
     .banner-spacer {
         display: flex;
         width: 20%;
     }
-    .p-image2 {
+    .p-image1 {
         display: flex;
+        margin-left: 200px;
+        margin-bottom: 15px;
     }
 }
 
@@ -114,7 +119,7 @@ input {
     display: flex;
     padding: 6px 6px 0px 6px;
     padding-top: 75px;
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
     .product-info {
         display: flex;
         flex-direction: column;
@@ -136,7 +141,7 @@ main {
         border-bottom: 1px solid black;
         border-top: 1px solid black;
         padding: 6px;
-        background-color: rgb(253, 117, 87);
+        background-color: rgb(80, 100, 130);
     }
 }
     
@@ -198,7 +203,7 @@ main {
 .product-card h3 {
     height: 2.5em;
     width: 100%;
-    background-color: #fc9d0e;
+    background-color: #ffffff;
     font-size: 1em;    
     color: black;
     overflow-x: hidden;
@@ -211,7 +216,7 @@ main {
     font-weight: 600;
     padding: 0.6em;
     color: black;
-    background-color: rgb(252, 179, 45);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     margin-bottom: 0;
 }
@@ -219,7 +224,7 @@ main {
 
 
 .buy-button {
-    background-color: rgb(255, 165, 0); 
+    background-color: rgb(255, 255, 255); 
     border: none;
     text-decoration: underline;
     max-height: 3em;
@@ -230,7 +235,7 @@ main {
 }
 
 .buy-button:hover {
-    background-color: rgba(228, 149, 2, 0.881); 
+    background-color: rgba(80, 100, 130, 0.881); 
 }
 
 .confirmation-main {
@@ -246,7 +251,7 @@ main {
     max-width: 600px; 
     width: 100%; 
     text-align: center;
-    background-color: #e9f7fe; 
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -263,7 +268,7 @@ main {
 }
 
 .confirmation-title {
-    color: orange;
+    color: rgb(80, 100, 130);
     margin-bottom: 10px;
     font-size: 24px;
 }
@@ -279,13 +284,13 @@ main {
     padding: 10px;
     margin: 10px 0;
     width: 100%; 
-    text-align: center; 
+    text-align: center;
 }
 
 .confirmation-info {
     padding: 6px;
     font-size: 20px;
-    color: orange;
+    color: rgb(80, 100, 130);
     background-color: transparent; 
     border: none !important; 
 }
@@ -341,7 +346,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 6px;
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
     padding: 20px 20px
 }
 
@@ -442,7 +447,7 @@ header {
 }
 
 .support-section h2 {
-    background-color: #ff6f4a;
+    background-color: rgb(80, 100, 130);
     color: white;
     padding: 1rem 1.5rem;
     font-weight: 600;
@@ -515,7 +520,7 @@ header {
 }
 
 .newsletter-form input[type="email"]:focus {
-    border-color: #ff6f4a;
+    border-color: #ffffff;
     outline: none;
     box-shadow: 0 0 0 2px rgba(255, 111, 74, 0.2);
 }
@@ -544,12 +549,12 @@ header {
 }
 
 .newsletter-options label:hover input[type="radio"] {
-    accent-color: #e05a3a;
+    accent-color: rgb(80, 100, 130);
 }
 
 
 .newsletter-form button {
-    background-color: #ff6f4a;
+    background-color: #ffffff;
     color: white;
     border: none;
     font-weight: 600;
@@ -558,7 +563,7 @@ header {
 }
 
 .newsletter-form button:hover {
-    background-color: #e05a3a;
+    background-color: rgb(80, 100, 130);
     transform: translateY(-1px);
 }
 
