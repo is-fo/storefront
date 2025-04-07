@@ -87,8 +87,13 @@ input {
         display: none;
     }
     .p-image1 {
-        width: 350px;
-        margin-left: 10px;
+        display: none;
+    }
+    .input-search {
+        display: none;
+    }
+    .footer-section:not(:first-child) {
+        display: none;
     }
 }
 
