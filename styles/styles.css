@@ -318,8 +318,8 @@ main {
 }
 
 .product-image {
-    max-width: 40%;
-    max-height: 25%;
+    max-width: 70%;
+    max-height: 45%;
     aspect-ratio: 1/1;
     object-fit: contain;
     mix-blend-mode: multiply;
