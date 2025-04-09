@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("E-post måste vara mellan 2 och 50 tecken och innehålla '@'.");
                 isValid = false;
             }
-
-            const phonePattern = /^[0-9]{10}$/;
+            
+            const phonePattern = /^[0-9\-\(\)]{1,50}$/;
             if (!phonePattern.test(userInfo.phone)) {
                 alert("Telefonnummer måste vara 10 siffror (exempel: 0701234567).");
                 isValid = false;
