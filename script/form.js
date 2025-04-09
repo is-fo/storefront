@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             const phonePattern = /^[0-9\-\(\)]{1,50}$/;
             if (!phonePattern.test(userInfo.phone)) {
-                alert("Telefonnummer måste vara 10 siffror (exempel: 0701234567).");
+                alert("Telefonnummer får endast innehålla siffror, bindestreck och parenteser");
                 isValid = false;
             }
 
@@ -73,9 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (isValid) {
                 sessionStorage.setItem("orderInfo", JSON.stringify(userInfo));
-
-                const product = JSON.parse(sessionStorage.getItem("selectedProduct"));
-                sessionStorage.setItem("orderProduct", JSON.stringify(product));
 
                 window.location.href = "confirmation.html";
             } else {

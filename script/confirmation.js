@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    const product = JSON.parse(sessionStorage.getItem("orderProduct"));
+    const product = JSON.parse(sessionStorage.getItem("selectedProduct"));
     const userInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
     
     
